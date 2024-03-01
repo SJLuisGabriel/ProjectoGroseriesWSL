@@ -1,0 +1,59 @@
+/* Clase para el contenedor del menú <nav> */
+.csMenu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;	
+    font-size: 16px;    
+    overflow: hidden;
+    background-color: black;    
+    font-family: Arial, Helvetica, sans-serif;    
+}
+/* Contenedores <ul> */
+.csMenu ul {
+    margin: 0;
+    padding: 0;
+    display: block;	    
+    list-style: none;
+}  
+/* Enlaces */
+.csMenu a {
+    color: white;	
+    display: block;	    
+    padding: 0.6em 0.8em;	
+    text-decoration: none;
+}
+/* Enlaces hover */
+.csMenu a:hover {
+    background-color: green;
+}
+/* Distribución horizontal */
+.mHoriz li {
+    float: left;    
+    display: block;	
+}  
+/* Distribución vertical */
+.mVerti li {
+    width: 10em;
+    display: block;	
+    text-align: left;
+}
+/* Submenú infinito */
+.subMenu {
+    position: fixed;
+    display: none !important;    
+    background-color: green;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.55);
+}
+/* Submenú infinito hover */
+    li:hover > .subMenu {
+    display: block !important;    
+}
+/* Submenú infinito enlaces hover  */
+.subMenu a:hover {
+    background-color: black;
+}
+/* Submenú infinito posicionamiento vertical */
+.mVerti .subMenu {
+    left: 8em;
+    position: absolute !important;
+}  
